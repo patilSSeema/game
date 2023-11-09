@@ -13,15 +13,17 @@ const Header = ({ moves }) => {
 
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar style={{ backgroundColor: "#B15EFF" }}>
         <Container>
-          <Navbar.Brand href="#home">Candy Crush </Navbar.Brand>
+          <Navbar.Brand style={{ color: "white" }}>
+            <h3>Candy Crush</h3>
+          </Navbar.Brand>
           <Stack bg="dark" data-bs-theme="dark" direction="horizontal" gap={3}>
             <div className="p-2 ms-auto top">
-              <Button variant="outline-success">Score: {score}</Button>
+              <Button variant="success">Score: {score}</Button>
             </div>
             <div className="p-2 top">
-              <Button variant="outline-warning"> Moves Left: {moves}</Button>
+              <Button variant="warning"> Moves Left: {moves}</Button>
             </div>
 
             <History>History</History>

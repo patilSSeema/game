@@ -17,6 +17,7 @@ code {
   font-size: 18px;
 }
 .app {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
